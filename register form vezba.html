@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register form</title>
+</head>
+<body>
+<!-- NASLOV -->
+<h1>Register</h1>
+<!-- POCETAK FORME -->
+<form>
+	<!-- IME I PREZIME -->
+<label for="firstName">First Name:</label>
+	<input id="firstName" type="text" name="firstName" placeholder="John" required>
+<label for="lastName">Last Name:</label>
+	<input id="lastName" type="text" name="lastName" placeholder="Smith" required>
+<!-- BIRANJE POLA -->
+<p>
+	<label for="male">Male</label>
+		<input id="male" type="radio" name="genderChoice" value="male" required>
+	<label for="female">Female</label>
+		<input id="female" type="radio" name="genderChoice" value="female" required>
+	<label for="other">Other</label>
+		<input id="other" type="radio" name="genderChoice" value="other" required>
+</p>
+<!-- EMAIL I PASSWORD -->
+<p>
+	<label for="email">Email:</label>
+		<input id="email" type="Email" name="email" placeholder="Your Email" required>
+	<label for="pw">Password:</label>
+		<input minlength="5" maxlength="10" id="pw" type="Password" name="password" placeholder="Your Password" required>
+</p>
+<!-- DAN RODJENJA -->
+<p>
+	<label>Birthday:</label>
+		<select name="month">
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+		</select>
+		<select name="day">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+		<select name="year">
+			<option value="2000">2000</option>
+			<option value="2001">2001</option>
+			<option value="2002">2002</option>
+			<option value="2003">2004</option>
+			<option value="2004">2004</option>
+			<option value="2005">2005</option>
+		</select>
+</p>
+<!-- TERMS & SERVICES CHECKBOX -->
+<p>
+	<label for="terms">I agree to the terms and services:
+		<input id="terms" type="checkbox" name="checkbox" required>
+	</label>
+
+</p>
+<!-- SUBMIT DUGME! -->
+<p>
+	<button>Submit</button>
+</p>
+
+</form>
+
+</body>
+</html>

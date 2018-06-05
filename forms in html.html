@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+
+<body>
+
+<h1>LOGIN</h1>
+
+<form action="http://wikipedia.org">
+<!-- action="http://wikipedia.org" method="get" -->
+
+	<!-- action or where the form sends data to -->
+	<!-- method or what HTTP method (get/post) -->
+
+<!-- Commening to show another way of writing labels + input 
+	<label>
+		Username:
+		<input type="text" placeholder="username" name="username"> 
+	</label>
+
+	<label>
+		Password:
+		<input type="password" placeholder="password" name="password">
+	</label>
+	
+	<input type="Submit" name="">
+--> 
+	<label for="username">Email:</label>
+	<input id="username" type="email" placeholder="email" name="username" required>
+
+	<label for="password">Password:</label>
+	<input id="password" type="password" placeholder="password" name="password" required>
+	
+	<input type="Submit" name="">
+
+</form>
+
+
+
+</body>
+</html>
